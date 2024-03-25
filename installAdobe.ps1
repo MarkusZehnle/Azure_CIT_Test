@@ -5,7 +5,7 @@ Write-host "$(Get-Date): Los gehts..." | Out-File -FilePath $Log
 Write-host "$(Get-Date):  Proxy setzen" | Out-File -FilePath $Log -Append
 # Lab-Proxy
 [string]$userName = 'markus.zehnle@adm.braincon.cloud'
-[string]$userPass = 'fnov8588'
+[string]$userPass = 'xyz'
 # Convert to SecureString
 [securestring]$secStringPassword = ConvertTo-SecureString $userPass -AsPlainText -Force
 [pscredential]$credObject = New-Object System.Management.Automation.PSCredential ($userName, $secStringPassword)
